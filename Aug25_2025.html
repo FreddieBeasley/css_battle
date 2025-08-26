@@ -1,0 +1,32 @@
+<div></div>
+<div id="a"></div>
+<div id="b"></div>
+
+<style>
+  body {
+    background: #3A335A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div {
+    width: 140px;
+    height: 30px;
+    background: #FFFFFF;
+    box-shadow:
+      0 -70px white,
+      0 70px white;
+  }
+
+  #a, #b {
+    position: absolute;
+  }
+  #a {
+      rotate: 15deg;
+      translate: -170px;
+  }
+
+  #b {
+    rotate: -15deg;
+    translate: 170px;
+  }
