@@ -1,0 +1,56 @@
+<div id="o"></div>
+<div id="i"></div>
+
+<style>
+  body{
+    background: #F0CD48;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  div{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #o{
+    width: 200px;
+    height: 120px;
+    background: #243D83;
+  }
+
+  #o::after, #o::before {
+    background: #243D83;
+    border-radius: 20px;
+  }
+
+  #i{
+    width: 100px;
+    height: 60px;
+    background: #6592CF;
+  }
+
+  #i::after, #i::before {
+    background: #6592CF;
+    border-radius: 10px;
+
+  }
+
+  div::after, div::before{
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 50%;
+  }
+  
+  div::after {
+    rotate: 30deg;
+  }
+
+  div::before {
+    rotate: -30deg;
+  }
+</style>
